@@ -14,9 +14,24 @@ h5{
   color: DarkSlateGray;
   font-family: sans-serif;
 }
-table{
+table, td, th{
   font-weight: bold;
   color: DarkGoldenrod;
-  border: dotted 3px;
+  border: ridge 1px;
+  border-color: black;
   text-align: center;
+}
+ul{
+  list-style-type: square;
+}
+.hyperLink:hover{
+  background-color: blue;
+  text-decoration: none;
+  color: white;
+
+
+}
+blockquote{
+  background-color: MidnightBlue;
+  color: Cyan;
 }
