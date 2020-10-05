@@ -1,10 +1,137 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Assessment</title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>My HTML Assessment Page</title>
+  <link rel='stylesheet' href='assessment.css'>
+</head>
+
+<body>
+  <h2 class="subjectHeader">TEXT</h2>
+  <p><strong>Lorem</strong> ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, eros sit amet euismod tincidunt, nisl leo vestibulum dui, sed tincidunt lacus ligula eu sapien. Proin at diam tincidunt, tincidunt ex at, venenatis nisl.
+  </p>
+  <blockquote>
+    <em><strong>Integer</strong> auctor est ac fringilla euismod. Donec laoreet urna vel diam blandit venenatis. Nam fermentum turpis a mauris condimentum, vitae faucibus leo commodo.
+  </em>
+  </blockquote>
+  <p><strong>Vestibulum</strong> elit nisi, posuere ut hendrerit a, molestie eu leo. Donec sit amet ullamcorper turpis. Mauris eu tellus blandit turpis fermentum dapibus eget sed ex. Vivamus auctor in velit ac suscipit. In hac habitasse platea dictumst.
+  </p>
+
+  <h3 class="subjectHeader">TABLE</h3>
+
+  <table id="scoreBoard">
+    <caption>Game Box Score</caption>
+    <thead>
+      <tr>
+        <th rowspan="2">&emsp;</th>
+        <th colspan="2">First Half</th>
+        <th colspan="2">Second Half</th>
+        <th rowspan="2">Final</th>
+      </tr>
+      <tr>
+        <th>Q1</th>
+        <th>Q2</th>
+        <th>Q3</th>
+        <th>Q4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Minnesota</td>
+        <td>&ensp;&nbsp;7</td>
+        <td>&ensp;&nbsp;10</td>
+        <td>&ensp;&nbsp;7</td>
+        <td>&ensp;&nbsp;7</td>
+        <td>&ensp;&nbsp;31</td>
+      </tr>
+      <tr>
+        <td>Houston</td>
+        <td>&ensp;&nbsp;0</td>
+        <td>&ensp;&nbsp;6</td>
+        <td>&ensp;&nbsp;10</td>
+        <td>&ensp;&nbsp;7</td>
+        <td>&ensp;&nbsp;23</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Total</th>
+        <th>7</th>
+        <th>9</th>
+        <th>3</th>
+        <th>13</th>
+        <th>32</th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h4 class="subjectHeader">LIST</h4>
+
+  <ul id="teamRoster">
+    <li><img height="40" src="https://content.sportslogos.net/logos/7/172/full/2704_minnesota_vikings-primary-20131.png" alt="Broncos Logo"/>
+      <br>
+      <a class="hyperLink" href="http://www.vikings.com/" target="_blank">Minnesota Vikings</a>
+      <ul>
+        <li>Coach:
+          <ol>
+            <li>Mike Zimmer</li>
+          </ol>
+        </li>
+        <li>QB
+          <ol>
+            <li>Kirk Cousins</li>
+            <li>Sean Mannion</li>
+          </ol>
+        </li>
+      </ul>
+    </li>
+    <li><img height="40" src="https://content.sportslogos.net/logos/7/157/full/570.png" alt="Bears Logo"/>
+      <br>
+      <a class="hyperLink" href="http://www.houstontexans.com/" target="_blank">Houston Texans</a>
+      <ul>
+        <li>Coach:
+          <ol>
+            <li>Bill O'brien</li>
+            </ol>
+            </li>
+        <li>QB
+          <ol>
+            <li>Deshaun Watson</li>
+            <li>AJ McCarron</li>
+          </ol>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <h5 class="subjectHeader">FORM</h5>
+
+  <form>
+    <label>First: <input name="fname"></label>
+    <label>Last: <input name="lname"></label><br>
+    <label for="favSport">Favorite Sport:</label>
+    <select id="favSport">
+  <option value="soccer">Soccer</option>
+  <option value="football">Football</option>
+  <option value="baseball">Baseball</option>
+  <option value="basketball">Basketball</option>
+    <option value="hockey">Hockey</option>
+</select><br> I have:
+    <ul id="checkbox-grid">
+      <li><label><input type="checkbox" name="activity" value="attended"/>Attended</label></li>
+      <li><label><input type="checkbox" name="activity" value="played" />Played</label></li>
+      <li><label><input type="checkbox" name="activity" value="coached" />Coached</label></li>
+      <li><label><input type="checkbox" name="activity" value="wagered" />Bet on</label></li>
+    </ul>
+    this sport.<br><br>
+
+    For my favorite sport, I prefer to watch:<br>
+    <label><input type="radio" name="league" value="amateur">Amateur</label>
+    <label><input type="radio" name="league" value="college">College</label>
+    <label><input type="radio" name="league" value="pro">Professional</label><br>
+    <input type="submit">
+  </form>
+</body>
+
 </html>
