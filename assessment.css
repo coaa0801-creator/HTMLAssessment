@@ -1,0 +1,22 @@
+h2{
+  color: DarkSlateGray;
+  font-family: sans-serif;
+}
+h3{
+  color: DarkSlateGray;
+  font-family: sans-serif;
+}
+h4{
+  color: DarkSlateGray;
+  font-family: sans-serif;
+}
+h5{
+  color: DarkSlateGray;
+  font-family: sans-serif;
+}
+table{
+  font-weight: bold;
+  color: DarkGoldenrod;
+  border: dotted 3px;
+  text-align: center;
+}
